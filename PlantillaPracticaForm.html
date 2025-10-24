@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Superhéroe</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+
+        }
+
+        .form_button {
+            display: block;
+            margin-top: 15px;
+            background-color: rgb(97, 24, 161);
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de Superhéroe</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label for="superheroe">Superhéroe favorito:</label>
+            <select id="superheroe" name="superheroe">
+                <option value="ironman">Iron Man</option>
+                <option value="hulk">The Hulk</option>
+           </select>
+            <br>
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de usuario</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Formato: 99999999" required><small>Formato: 99999999</small>
+        </fieldset>
+        <br>
+        <input class="form_button" type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
