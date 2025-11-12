@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Formulario avanzado</title>
+    <style>
+         label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type=radio]+label,
+        input[type=checkbox]+label {
+            display: inline;
+        }
+         input[type=submit],
+        button[type=submit],
+        button[type=reset] {
+            display: inline;
+            margin-right: 10px;
+            margin-top: 15px;
+            color: white;
+            border-radius: 10px;
+        }
+        input[type=submit], button[type=submit] {
+            background-color: rgb(79, 60, 96);
+        }
+         button[type=reset] {
+            background-color: rgb(196, 76, 20);
+        }
+         *:required {
+            border-color: gold;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+<body>
+    <h1>Formulario avanzado</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label for="superheroe">Superhéroe favorito:</label>
+            <select id="superheroe" name="superheroe">
+                <option value="ironman">Iron Man</option>
+                <option value="hulk">The Hulk</option>
+           </select>
+            <br>
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Formato: 99999999" required><small>Formato: 99999999</small>
+            <label>fecha</label>
+            <input type="date" nombre="fecha">
+            <label>Contraseña</label>
+            <input type="password" name="clave">
+        </fieldset>
+         <br>
+         <fieldset>
+    
+<form action="#" method="post">
+
+    <div class="form-group">
+        <label for="fullname">Nombre Completo:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Introduce tu nombre completo" required>
+    </div>
+
+
+    <div class="form-group">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+    </div>
+
+    <div class="form-group">
+    <label>Asignatura Favorita:</label>
+    <div class="radio-group">
+        <div>
+            <input type="radio" id="security" name="favoriteSubject" value="security" required>
+            <label for="security">Seguridad Informática</label>
+        </div>
+        <div>
+            <input type="radio" id="python" name="favoriteSubject" value="python" required>
+            <label for="python">Python</label>
+        </div>
+        <div>
+            <input type="radio" id="webApplications" name="favoriteSubject" value="webApplications" required>
+            <label for="webApplications">Aplicaciones Web</label>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    <div class="form-group">
+        <label for="birthdate">Fecha de Nacimiento:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+    </div>
+
+    <div class="form-group">
+        <label for="gender">Género:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+            <option value="other">Otro</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <button type="submit">Enviar</button>
+    </div>
+</form>
+
+</body>
+
+</html>
